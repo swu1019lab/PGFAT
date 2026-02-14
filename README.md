@@ -34,6 +34,15 @@ pip install .
 - biopython
 - tqdm, tomli
 
+**External Tools (must be in PATH):**
+- hmmsearch (HMMER)
+- mafft
+- orthofinder
+- meme
+- yn00 (PAML)
+- pal2nal.pl
+- diamond
+
 ---
 
 ## 🚀 Quick Start
