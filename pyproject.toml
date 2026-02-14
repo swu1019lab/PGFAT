@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgfat"
+version = "1.0.0"
+authors = [
+  { name="Xiaodong Li", email="lxd1997xy@163.com" },
+]
+description = "Pan-gene family analysis toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "BSD-3-Clause" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "numpy",
+    "biopython",
+    "scipy",
+    "tqdm",
+    "tomli",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/YourUsername/pgfat"
+"Bug Tracker" = "https://github.com/YourUsername/pgfat/issues"
+
+[project.scripts]
+pgfat = "pgfat.pgfat:main"
+
+[tool.setuptools]
+packages = ["pgfat"]

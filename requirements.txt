@@ -1,0 +1,7 @@
+pandas
+matplotlib
+numpy
+biopython
+scipy
+tqdm
+tomli
