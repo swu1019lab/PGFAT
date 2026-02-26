@@ -22,7 +22,7 @@
 
 ## 🛠️ Installation
 
-Clone the repository from GitHub to your local machine. **Important: You must enter the `hastat` directory before installation.**
+Clone the repository from GitHub to your local machine. **Important: You must enter the `PGFAT` directory before installation.**
 ```bash
 git clone https://github.com/swu1019lab/PGFAT.git
 cd PGFAT
