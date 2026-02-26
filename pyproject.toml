@@ -29,8 +29,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/YourUsername/pgfat"
-"Bug Tracker" = "https://github.com/YourUsername/pgfat/issues"
+"Homepage" = "https://github.com/swu1019lab/pgfat"
+"Bug Tracker" = "https://github.com/swu1019lab/pgfat/issues"
 
 [project.scripts]
 pgfat = "pgfat.pgfat:main"

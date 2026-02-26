@@ -22,11 +22,21 @@
 
 ## 🛠️ Installation
 
-```bash
-git clone https://github.com/YourUsername/pgfat.git
-cd pgfat
-pip install .
-```
+This method builds a standard distribution package and installs it.
+
+1.  **Install the build tool** (skip if already installed):
+    ```bash
+    pip install build --user -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ```
+2.  **Build the package**:
+    ```bash
+    python -m build
+    ```
+    *Explanation: This command compiles the source code and creates a `dist/` directory containing the installable package file (e.g., `pgfat-1.0.0.tar.gz`).*
+3.  **Install the package**:
+    ```bash
+    pip install dist/pgfat-1.0.0.tar.gz --user -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ```
 
 **Dependencies:**
 - Python 3.8+
