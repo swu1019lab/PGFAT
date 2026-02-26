@@ -22,6 +22,12 @@
 
 ## 🛠️ Installation
 
+Clone the repository from GitHub to your local machine. **Important: You must enter the `hastat` directory before installation.**
+```bash
+git clone https://github.com/swu1019lab/PGFAT.git
+cd PGFAT
+```
+
 This method builds a standard distribution package and installs it.
 
 1.  **Install the build tool** (skip if already installed):
