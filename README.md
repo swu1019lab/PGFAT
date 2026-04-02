@@ -27,13 +27,19 @@ PGFAT is distributed as a compiled binary extension for performance and security
 1. **Download the Release**:
    Extract the provided PGFAT release archive and navigate into the directory.
    ```bash
-   cd PGFAT_Release
+   git clone https://github.com/swu1019lab/PGFAT.git
+   cd PGFAT
    ```
 
 2. **Install Python Dependencies**:
    Ensure you have Python 3.8+ installed, then install the required libraries:
    ```bash
    pip install -r requirements.txt
+   ```
+
+3. **Usage**:
+   ```bash
+   python run_pgfat.py -h
    ```
 
 **Dependencies:**
