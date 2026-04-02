@@ -74,7 +74,17 @@ python run_pgfat.py -i ./proteins_dir -o ./output_dir -f MYB myb.hmm
 *   `./output_dir`: Directory where results and figures will be saved.
 *   `myb.hmm`: HMM profile for the gene family (from Pfam etc.).
 
-### 2. Advanced Analysis with Evolutionary & Phenotypic Data
+### 2. Run with bundled example data (CIPK)
+
+Use the built-in example dataset to quickly test PGFAT with the CIPK gene family:
+
+```bash
+python run_pgfat.py -i example/data/proteins -o results_cipk -f CIPK example/data/PK-PF00069.hmm,example/data/CIPK-PF03822.hmm
+```
+
+This command uses two HMM profiles (comma-separated) for stricter family identification.
+
+### 3. Advanced Analysis with Evolutionary & Phenotypic Data
 
 Enable Ka/Ks calculation, TE analysis, Phlyogeny and Phenotype association:
 
