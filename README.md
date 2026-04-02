@@ -20,29 +20,21 @@
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Installation & Setup
 
-Clone the repository from GitHub to your local machine. **Important: You must enter the `PGFAT` directory before installation.**
-```bash
-git clone https://github.com/swu1019lab/PGFAT.git
-cd PGFAT
-```
+PGFAT is distributed as a compiled binary extension for performance and security. No standard package installation is required.
 
-This method builds a standard distribution package and installs it.
+1. **Download the Release**:
+   Extract the provided PGFAT release archive and navigate into the directory.
+   ```bash
+   cd PGFAT_Release
+   ```
 
-1.  **Install the build tool** (skip if already installed):
-    ```bash
-    pip install build --user -i https://pypi.tuna.tsinghua.edu.cn/simple
-    ```
-2.  **Build the package**:
-    ```bash
-    python -m build
-    ```
-    *Explanation: This command compiles the source code and creates a `dist/` directory containing the installable package file (e.g., `pgfat-1.0.0.tar.gz`).*
-3.  **Install the package**:
-    ```bash
-    pip install dist/pgfat-1.0.0.tar.gz --user -i https://pypi.tuna.tsinghua.edu.cn/simple
-    ```
+2. **Install Python Dependencies**:
+   Ensure you have Python 3.8+ installed, then install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 **Dependencies:**
 - Python 3.8+
@@ -69,7 +61,7 @@ This method builds a standard distribution package and installs it.
 Identify members of the "MYB" family across genomes using an HMM profile:
 
 ```bash
-pgfat -i ./proteins_dir -o ./output_dir -f MYB myb.hmm
+python run_pgfat.py -i ./proteins_dir -o ./output_dir -f MYB myb.hmm
 ```
 
 *   `./proteins_dir`: Directory containing one protein FASTA file per genome (e.g., `GenomeA.pep`, `GenomeB.pep`).
@@ -81,7 +73,7 @@ pgfat -i ./proteins_dir -o ./output_dir -f MYB myb.hmm
 Enable Ka/Ks calculation, TE analysis, Phlyogeny and Phenotype association:
 
 ```bash
-pgfat -i ./proteins \
+python run_pgfat.py -i ./proteins \
       -o ./results \
       -f MYB myb.hmm \
       --cds ./cds_sequences \
